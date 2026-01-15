@@ -1,87 +1,76 @@
-# Welcome to React Router!
+# Resumizer - AI-Powered Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Resumizer is a smart, AI-driven resume feedback tool that helps job seekers optimize their resumes for specific job descriptions. Built with **React Router 7** and powered by **Puter.js**, it provides detailed ATS scoring, improvement tips, and analysis of your resume's strengths and weaknesses.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+![Resumizer Banner](public/images/bg-main.svg)
 
-## Features
+## 🚀 Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **AI-Powered Analysis**: Get instant feedback on your resume using Claude-3.5-Sonnet (via Puter AI).
+- **ATS Scoring**: See how well your resume matches a specific job description.
+- **Detailed Feedback**: Analysis of key sections including Profile Summary, Experience, Skills, and Education.
+- **Resume Management**: Track multiple applications and resume versions.
+- **Secure Storage**: All data and files are stored securely using Puter's cloud infrastructure.
+- **Modern UI**: Clean, responsive interface built with Tailwind CSS.
 
-## Getting Started
+## 🛠️ Tech Stack
+
+- **Framework**: [React Router 7](https://reactrouter.com/)
+- **Backend Services**: [Puter.js](https://puter.com/) (Auth, KV Storage, File System, AI)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **PDF Processing**: [PDF.js](https://mozilla.github.io/pdf.js/)
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- A [Puter.com](https://puter.com/) account (the app uses Puter's cloud environment)
 
 ### Installation
 
-Install the dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/harshu07-collab/ai-resume-analyzer.git
+   cd ai-resume-analyzer
+   ```
 
-```bash
-npm install
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### Development
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-Start the development server with HMR:
+4. Open `http://localhost:5173` in your browser.
 
-```bash
-npm run dev
-```
+## 📦 Deployment
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
+### Docker
 
 To build and run using Docker:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+docker build -t ai-resume-analyzer .
+docker run -p 3000:3000 ai-resume-analyzer
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+### Puter Deployment
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+Since this app uses Puter.js, it is optimized to run on the [Puter.com](https://puter.com/) platform. You can easily deploy it as a Puter App.
 
-### DIY Deployment
+## 🤝 Contributing
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Make sure to deploy the output of `npm run build`
+## 📄 License
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router and Puter.
